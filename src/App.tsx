@@ -2,7 +2,7 @@ import { AppStateProvider } from './lib/AppState';
 import { RouterProvider, useRouter } from './lib/router';
 import Masthead from './components/Masthead';
 import Footer from './components/Footer';
-import WelcomeWash from './components/WelcomeWash';
+
 import CartDrawer from './components/CartDrawer';
 import SearchOverlay from './components/SearchOverlay';
 
@@ -41,7 +41,7 @@ function Shell() {
   const hideChrome = route.path === '/login' || route.path === '/register' || route.path.startsWith('/ritual');
   return (
     <>
-      <WelcomeWash />
+
       {!hideChrome && <Masthead />}
       <Router />
       {!hideChrome && <Footer />}
